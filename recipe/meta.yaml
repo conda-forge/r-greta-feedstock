@@ -1,4 +1,4 @@
-{% set version = '0.4.3' %}
+{% set version = "0.4.4" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/greta_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/greta/greta_{{ version }}.tar.gz
-  sha256: 3b585f0bf1f73f7da7e87b1f07cb663a5dbded0c8e73ea33e2294b3d0a00499f
+  sha256: 95964d8f2832d1dc6c9f2aab07028c2ec315ad0c574167ac63ac6121435f2ef7
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -64,11 +64,8 @@ about:
   home: https://greta-stats.org
   dev_url: https://github.com/greta-dev/greta
   license: Apache-2.0
-  summary: "Write statistical models in R and fit them by MCMC and optimisation on CPUs and GPUs,
-    using Google 'TensorFlow'.  greta lets you write your own model like in BUGS, JAGS
-    and Stan, except that you write models right in R, it scales well to massive datasets,
-    and it\u2019s easy to extend and build on.  See the website for more information,
-    including tutorials, examples, package documentation, and the greta forum."
+  summary: "Write statistical models in R and fit them by MCMC and optimisation on CPUs and GPUs, using Google 'TensorFlow'.  greta lets you write your own model like in BUGS, JAGS and Stan, except that you write models right in R, it scales well to massive datasets, and it’s easy to extend and build on.  See the website
+    for more information, including tutorials, examples, package documentation, and the greta forum."
   license_family: Apache
   license_file:
     - LICENSE
