@@ -1,4 +1,4 @@
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/greta_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/greta/greta_{{ version }}.tar.gz
-  sha256: 95964d8f2832d1dc6c9f2aab07028c2ec315ad0c574167ac63ac6121435f2ef7
+  sha256: c275640781252f1e44462af036efaad5859cc7380b90048ab2c81c2d2268c24f
 
 build:
   merge_build_host: true  # [win]
