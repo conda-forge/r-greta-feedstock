@@ -1,7 +1,6 @@
 {% set version = "0.4.5" %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-greta
@@ -14,8 +13,7 @@ source:
   sha256: c275640781252f1e44462af036efaad5859cc7380b90048ab2c81c2d2268c24f
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
