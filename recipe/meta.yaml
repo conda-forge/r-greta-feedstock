@@ -1,4 +1,4 @@
-{% set version = "0.4.5" %}
+{% set version = "0.5.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/greta_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/greta/greta_{{ version }}.tar.gz
-  sha256: c275640781252f1e44462af036efaad5859cc7380b90048ab2c81c2d2268c24f
+  sha256: 10bdf140d2f639ff06b1cf01de16f1686f3cbb5e8eb18c3b4c0ac02242519705
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
