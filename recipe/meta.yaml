@@ -25,32 +25,36 @@ requirements:
 
   host:
     - r-base
-    - r-r6
     - r-abind
     - r-callr
-    - r-cli >=3.0.0
+    - r-cli >=3.4.1
     - r-coda
     - r-future >=1.22.1
     - r-glue >=1.5.1
     - r-parallelly >=1.29.0
     - r-progress >=1.2.0
+    - r-r6
     - r-reticulate >=1.19.0
-    - r-tensorflow >=2.7.0
+    - r-rlang
+    - r-tensorflow ==2.16.0
+    - r-whisker
     - r-yesno
 
   run:
     - r-base
-    - r-r6
     - r-abind
     - r-callr
-    - r-cli >=3.0.0
+    - r-cli >=3.4.1
     - r-coda
     - r-future >=1.22.1
     - r-glue >=1.5.1
     - r-parallelly >=1.29.0
     - r-progress >=1.2.0
+    - r-r6
     - r-reticulate >=1.19.0
-    - r-tensorflow >=2.7.0
+    - r-rlang
+    - r-tensorflow ==2.16.0
+    - r-whisker
     - r-yesno
 
 test:
