@@ -36,7 +36,7 @@ requirements:
     - r-r6
     - r-reticulate >=1.19.0
     - r-rlang
-    - r-tensorflow ==2.16.0
+    - r-tensorflow >=2.16.0
     - r-whisker
     - r-yesno
 
@@ -53,7 +53,7 @@ requirements:
     - r-r6
     - r-reticulate >=1.19.0
     - r-rlang
-    - r-tensorflow ==2.16.0
+    - r-tensorflow >=2.16.0
     - r-whisker
     - r-yesno
 
